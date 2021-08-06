@@ -2024,4 +2024,8 @@ const songs = [
     duration: '4:55'
   }
 ];
-(module.exports = users), songs;
+const dataSets = {
+  users,
+  songs
+};
+module.exports = dataSets;

@@ -39,3 +39,10 @@ storeReadDates(messages, start, end);
 console.log(readDates.has(messages[0]));
 messages[0] = null;
 console.log(readDates.has(messages[0]));
+
+const weakMapSet = {
+  storeReadDates,
+  countUnreadMessages
+};
+// export
+module.exports = weakMapSet;

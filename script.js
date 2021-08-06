@@ -78,8 +78,14 @@ const topSalary = salaries => {
   }
   return topName;
 };
-
+const topSalary2 = salaries => {
+  return Object.keys(salaries).reduce(
+    (max, s) => (salaries[max] > salaries[s] ? max : s),
+    null
+  );
+};
 // console.log(topSalary(salaries));
-console.log(topSalary(noSal));
+// console.log(topSalary(salaries));
+console.log(topSalary2(noSal));
 
-pt(topSalary(noSal));
+// pt(topSalary2(salaries));

@@ -55,6 +55,20 @@ const cleanObj = arr => {
   }
   return Object.values(obj);
 };
+// ********************************
+// Iterable keys
+// ********************************
+// We’d like to get an array of map.keys() in a variable and then apply array-specific methods to it, e.g. .push.
+let keysMap = new Map([
+  ['name', 'Oli'],
+  ['username', 'olimoli'],
+  ['email', 'email@someemail.com']
+]);
+
+let keys = Array.from(keysMap.keys());
+
+console.log('keys :>> ', keys);
+
 // console.log(`cleanObj(arr)`, cleanObj(arr));
 // pt(cleanMap(arr));
 const functions = {
